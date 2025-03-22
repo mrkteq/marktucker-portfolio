@@ -1,4 +1,4 @@
-  /* Modern CSS Reset */
+/* Modern CSS Reset */
   *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +9,7 @@
 :root {
     --color-primary: #1a2634;
     --color-accent: #66a3ff;
+    --color-accent-light: #c1d4f7;
     --text-color: #fff;
     --gradient-bg: linear-gradient(45deg, #4b6cb7 0%, #ffffff 100%);
     --spacing-section: clamp(3rem, 10vw, 8rem);
@@ -75,85 +76,6 @@ section {
     background: var(--gradient-bg);
     clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     padding: calc(var(--spacing-section) * 1.5) 0;
-}
-
-.about-content {
-    display: grid;
-    gap: 2rem;
-    align-items: center;
-}
-
-@media (min-width: 768px) {
-    .about-content {
-        grid-template-columns: auto 1fr;
-    }
-}
-
-.logo {
-    width: 150px;
-    height: 150px;
-    background: white;
-    border-radius: 50%;
-    padding: 2rem;
-    background-image: url(/img/logo.svg);
-    background-size: contain;
-}
-
-/* Timeline */
-.timeline-container {
-    width: 100%;
-    max-width: 800px;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 20px 0;
-    padding-left: 40px;
-    border-left: 3px solid #007acc;
-}
-
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 0;
-    width: 14px;
-    height: 14px;
-    background-color: #007acc;
-    border-radius: 50%;
-}
-
-.timeline-year {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #007acc;
-}
-
-.timeline-title {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin: 5px 0;
-}
-
-.timeline-description {
-    color: #555;
-    line-height: 1.6;
-    font-size: 1em;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-.timeline-item {
-    padding-left: 30px;
-}
-
-.timeline-year {
-    font-size: 1em;
-}
-
-.timeline-title {
-    font-size: 1em;
-}
 }
 
 /* Projects Section */
@@ -310,6 +232,20 @@ section {
 .button:hover {
     background: var(--color-accent);
     color: white;
+}
+
+.subtle-button {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subtle-button:hover {
+    background-color: var(--color-primary);
+    color: var(--text-color);
 }
 
 /* Footer */
