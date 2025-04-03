@@ -3,76 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mark Tucker's Portfolio - Experienced Web Developer specializing in digital solutions">
+    <meta name="keywords" content="web developer, portfolio, digital solutions">
+    
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    
     <title>Mark Tucker | Portfolio</title>
+    
     <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"></noscript>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Welcome to my portfolio</h1>
-                <h2>About Me</h2>
+    <header class="hero" role="banner">
+        <div class="container">
+            <h1>Welcome to my portfolio</h1>
+            <section class="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
                 <p>I'm an experienced web developer with a background in building digital solutions for agencies, PLCs, and businesses across Europe. Skilled in developing and maintaining websites, problem-solving, and adapting to evolving technologies. Passionate about creating functional, user-friendly experiences and always looking to refine my skills. Seeking remote opportunities where I can contribute expertise, reliability, and a commitment to quality work.</p>
-                <a href="https://72525175.netlify.app" class="button blue">View Resume</a>
-            </div>
-        </section>
+                <a href="https://72525175.netlify.app" class="button blue" aria-label="View my complete resume">View Resume</a>
+            </section>
+        </div>
+    </header>
 
-        <section id="projects" class="projects">
+    <main id="main-content" role="main">
+        <article id="projects" class="projects">
             <div class="container">
-              <h2>Latest Project</h2>
-              <div class="project-grid">
-                
-                <!-- Featured Project -->
-                <div class="project-content">
-                  <h3>Trusted Pet & House Care</h3>
-                  <p>We put this project together in a day to give people a quick look at something we were experimenting with and to see if it might spark any interest.</p>
-                  <div class="button-group">
-                    <a href="" class="button blue" target="_blank">View Website</a>
-                    <a href="" class="button blue" target="_blank">View Source</a>
-                  </div>
-                </div>
-                
-                <!-- Featured Project Image -->
-                <div class="featured-image-container">
-                  <img src="/img/project-ps.jpg" alt="Trusted Pet & House Care" class="project-image featured" id="featured-project">
-                </div>
-                
-                <h2>More Projects</h2>
-                <!-- Thumbnail Slider -->
-                <div class="project-slider-container">
-                  <button class="slider-nav prev blue" aria-label="Previous projects">&lt;</button>
-                  <div class="project-slider">
-                    <img src="/img/project-ps.jpg" data-live-url="https://howsit.netlify.app/" data-source-url="https://github.com/mrkteq/house--sitter-website" alt="Trusted Pet & House Care" class="thumbnail active" data-title="Trusted Pet & House Care" data-description="We put this project together in a day to give people a quick look at something we were experimenting with and to see if it might spark any interest.">
-                    <img src="/img/project-ithm.png" data-live-url="https://ithandyman.netlify.app/" data-source-url="https://github.com/mrkteq/IT-Handyman" alt="#" class="thumbnail" data-title="TechWizard" data-description="I developed this website as a way to explore a proposed idea, aiming to raise awareness and potentially grow it into a business or side project.">
-                    <img src="/img/project-rca.jpg" data-live-url="https://api-for-countries.netlify.app/" data-source-url="https://github.com/mrkteq/rest-countries-api" alt="#" class="thumbnail" data-title="REST Countries API" data-description="This project is built with semantic HTML5 markup, CSS Grid, Vue3 and uses the Countries REST API.">
-                    <img src="/img/project-nlsu.jpg" data-live-url="https://fm-nl-sign-up.netlify.app/" data-source-url="https://github.com/mrkteq/newsletter-sign-up" alt="#" class="thumbnail" data-title="Newsletter Sign Up" data-description="The project was built using semantic HTML5 markup, CSS logical properties, and CSS Grid with a mobile-first workflow.">
-                    <img src="/img/project-rwl.jpg" data-live-url="https://fm-responsive-web-layout.netlify.app/" data-source-url="https://github.com/mrkteq/responsive-web-layout" alt="#" class="thumbnail" data-title="Responsive Web Layout" data-description="The project was built using semantic HTML5 markup, CSS custom properties, Flexbox, and CSS Grid with a mobile-first workflow. The process included structuring the project, planning the layout, annotating design comps, using GitHub, including Google fonts, naming custom variables, and writing CSS reset styles. This experience has taught me how to quickly and efficiently get started on small projects.">
-                    <img src="/img/project-sb.jpg" data-live-url="https://mrkteq.github.io/smart-brain/" data-source-url="https://github.com/mrkteq/smart-brain" alt="#" class="thumbnail" data-title="Smart Brain" data-description="Built with HTML, CSS, JavaScript and React this is a Face Recognition Project, that uses a Machine Learning API to detect faces in photos. It has a PostgreSQL Database on the Backend and communicates via HTTP with a Server so that users can Sign Up and Sign In to their Dashboard and keep track of their total number of submissions. I created a RESTful API and used Node and Express for the Server during development and then deployed to Render io and GitHub Pages for production.">
-                    <img src="/img/project-rfs.jpg" data-live-url="https://mrkteq-robofriends.netlify.app/" data-source-url="https://github.com/mrkteq/robofriends" alt="#" class="thumbnail" data-title="RoboFriends" data-description="Built with React this is a simple project that uses the RoboHash API to generate a list of Robots and a Search Box to filter the Robots by name. I used Tachyons for styling and deployed to Netlify.">
-                    <img src="/img/project-bg.jpg" data-live-url="https://mrkteq-bg-generator.netlify.app/" data-source-url="https://github.com/mrkteq/background-generator" alt="#" class="thumbnail" data-title="Background Generator" data-description="This is a simple HTML project that uses JavaScript to generate a Linear Gradient Background and then display the CSS code on the frontend.">
-                    <img src="/img/project-rf.jpg" data-live-url="https://mrkteq-robot-friend.netlify.app/" data-source-url="https://github.com/mrkteq/robot-friend" alt="#" class="thumbnail" data-title="Robot Friend" data-description="CSS project with an animated background fill and arms and legs that move when you hover over it.">
-                    <img src="/img/project-wssu.jpg" data-live-url="https://mrkteq-website-startup.netlify.app/" data-source-url="https://github.com/mrkteq/website-startup" alt="#" class="thumbnail" data-title="Startup Website" data-description="This is a simple HTML project that uses CSS to create a responsive website for a startup company. Basically it's a landing page with MailChimp sign up integration.">
-                    <img src="/img/project-qg.jpg" data-live-url="https://mrkteq-quote-generator.netlify.app/" data-source-url="https://github.com/mrkteq/quote-generator" alt="#" class="thumbnail" data-title="Quote Generator" data-description="Quote Generator built with HTML, CSS and JavaScript. It uses an API to generate random quotes and then allows you to share them on Twitter. It also has a button to generate a new quote and a button to copy the quote to your clipboard.">
-                    <img src="/img/project-swapi.jpg" data-live-url="https://mrkteq-starwars-api.netlify.app/" data-source-url="https://github.com/mrkteq/starwars-api" alt="#" class="thumbnail" data-title="Star Wars API" data-description="This is a work-in-progress: It is currently a list of Star Wars characters built with HTML, CSS and JavaScript. It uses an API to generate the list for each movie.">
-                  </div>
-                  <button class="slider-nav next blue" aria-label="Next projects">&gt;</button>
-                </div>
+                <section class="featured-project" aria-labelledby="featured-project-heading">
+                    <h2 id="featured-project-heading">Latest Project</h2>
+                    <div class="project-grid">
+                        <div class="project-content">
+                            <h3>Trusted Pet & House Care</h3>
+                            <p>We put this project together in a day to give people a quick look at something we were experimenting with and to see if it might spark any interest.</p>
+                            <div class="button-group" role="group" aria-label="Project links">
+                                <a href="" class="button blue" target="_blank" rel="noopener noreferrer" aria-label="View Trusted Pet & House Care website">View Website</a>
+                                <a href="" class="button blue" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">View Source</a>
+                            </div>
+                        </div>
+                        
+                        <figure class="featured-image-container">
+                            <img src="/img/project-ps.jpg" 
+                                 alt="Screenshot of Trusted Pet & House Care website" 
+                                 class="project-image featured" 
+                                 id="featured-project">
+                        </figure>
+                    </div>
+                </section>
 
-              </div>
+                <section class="project-showcase" aria-labelledby="more-projects-heading">
+                    <h2 id="more-projects-heading">More Projects</h2>
+                    <div class="project-slider-container" role="region" aria-label="Project gallery">
+                        <button class="slider-nav prev blue" aria-label="View previous projects">&lt;</button>
+                        <div class="project-slider" role="list">
+                            <img src="/img/project-ps.jpg" 
+                                 data-live-url="https://howsit.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/house--sitter-website" 
+                                 alt="Trusted Pet & House Care website preview" 
+                                 class="thumbnail active" 
+                                 data-title="Trusted Pet & House Care" 
+                                 data-description="We put this project together in a day to give people a quick look at something we were experimenting with and to see if it might spark any interest."
+                                 role="listitem">
+                            
+                            <img src="/img/project-ithm.png" 
+                                 data-live-url="https://ithandyman.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/IT-Handyman" 
+                                 alt="TechWizard website preview" 
+                                 class="thumbnail" 
+                                 data-title="TechWizard" 
+                                 data-description="I developed this website as a way to explore a proposed idea, aiming to raise awareness and potentially grow it into a business or side project."
+                                 role="listitem">
+                            
+                            <img src="/img/project-rca.jpg" 
+                                 data-live-url="https://api-for-countries.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/rest-countries-api" 
+                                 alt="REST Countries API project preview" 
+                                 class="thumbnail" 
+                                 data-title="REST Countries API" 
+                                 data-description="This project is built with semantic HTML5 markup, CSS Grid, Vue3 and uses the Countries REST API."
+                                 role="listitem">
+                            
+                            <img src="/img/project-nlsu.jpg" 
+                                 data-live-url="https://fm-nl-sign-up.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/newsletter-sign-up" 
+                                 alt="Newsletter Sign Up project preview" 
+                                 class="thumbnail" 
+                                 data-title="Newsletter Sign Up" 
+                                 data-description="The project was built using semantic HTML5 markup, CSS logical properties, and CSS Grid with a mobile-first workflow."
+                                 role="listitem">
+                            
+                            <img src="/img/project-rwl.jpg" 
+                                 data-live-url="https://fm-responsive-web-layout.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/responsive-web-layout" 
+                                 alt="Responsive Web Layout project preview" 
+                                 class="thumbnail" 
+                                 data-title="Responsive Web Layout" 
+                                 data-description="The project was built using semantic HTML5 markup, CSS custom properties, Flexbox, and CSS Grid with a mobile-first workflow. The process included structuring the project, planning the layout, annotating design comps, using GitHub, including Google fonts, naming custom variables, and writing CSS reset styles. This experience has taught me how to quickly and efficiently get started on small projects."
+                                 role="listitem">
+                            
+                            <img src="/img/project-sb.jpg" 
+                                 data-live-url="https://mrkteq.github.io/smart-brain/" 
+                                 data-source-url="https://github.com/mrkteq/smart-brain" 
+                                 alt="Smart Brain project preview" 
+                                 class="thumbnail" 
+                                 data-title="Smart Brain" 
+                                 data-description="Built with HTML, CSS, JavaScript and React this is a Face Recognition Project, that uses a Machine Learning API to detect faces in photos. It has a PostgreSQL Database on the Backend and communicates via HTTP with a Server so that users can Sign Up and Sign In to their Dashboard and keep track of their total number of submissions. I created a RESTful API and used Node and Express for the Server during development and then deployed to Render io and GitHub Pages for production."
+                                 role="listitem">
+                            
+                            <img src="/img/project-rfs.jpg" 
+                                 data-live-url="https://mrkteq-robofriends.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/robofriends" 
+                                 alt="RoboFriends project preview" 
+                                 class="thumbnail" 
+                                 data-title="RoboFriends" 
+                                 data-description="Built with React this is a simple project that uses the RoboHash API to generate a list of Robots and a Search Box to filter the Robots by name. I used Tachyons for styling and deployed to Netlify."
+                                 role="listitem">
+                            
+                            <img src="/img/project-bg.jpg" 
+                                 data-live-url="https://mrkteq-bg-generator.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/background-generator" 
+                                 alt="Background Generator project preview" 
+                                 class="thumbnail" 
+                                 data-title="Background Generator" 
+                                 data-description="This is a simple HTML project that uses JavaScript to generate a Linear Gradient Background and then display the CSS code on the frontend."
+                                 role="listitem">
+                            
+                            <img src="/img/project-rf.jpg" 
+                                 data-live-url="https://mrkteq-robot-friend.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/robot-friend" 
+                                 alt="Robot Friend project preview" 
+                                 class="thumbnail" 
+                                 data-title="Robot Friend" 
+                                 data-description="CSS project with an animated background fill and arms and legs that move when you hover over it."
+                                 role="listitem">
+                            
+                            <img src="/img/project-wssu.jpg" 
+                                 data-live-url="https://mrkteq-website-startup.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/website-startup" 
+                                 alt="Startup Website project preview" 
+                                 class="thumbnail" 
+                                 data-title="Startup Website" 
+                                 data-description="This is a simple HTML project that uses CSS to create a responsive website for a startup company. Basically it's a landing page with MailChimp sign up integration."
+                                 role="listitem">
+                            
+                            <img src="/img/project-qg.jpg" 
+                                 data-live-url="https://mrkteq-quote-generator.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/quote-generator" 
+                                 alt="Quote Generator project preview" 
+                                 class="thumbnail" 
+                                 data-title="Quote Generator" 
+                                 data-description="Quote Generator built with HTML, CSS and JavaScript. It uses an API to generate random quotes and then allows you to share them on Twitter. It also has a button to generate a new quote and a button to copy the quote to your clipboard."
+                                 role="listitem">
+                            
+                            <img src="/img/project-swapi.jpg" 
+                                 data-live-url="https://mrkteq-starwars-api.netlify.app/" 
+                                 data-source-url="https://github.com/mrkteq/starwars-api" 
+                                 alt="Star Wars API project preview" 
+                                 class="thumbnail" 
+                                 data-title="Star Wars API" 
+                                 data-description="This is a work-in-progress: It is currently a list of Star Wars characters built with HTML, CSS and JavaScript. It uses an API to generate the list for each movie."
+                                 role="listitem">
+                        </div>
+                        <button class="slider-nav next blue" aria-label="View next projects">&gt;</button>
+                    </div>
+                </section>
             </div>
-        </section>
-
+        </article>
     </main>
+
     <script src="/js/script.js"></script>
 </body>
 </html>
