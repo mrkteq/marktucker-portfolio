@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.querySelector('.slider-nav.next');
   const projectTitle = document.querySelector('.project-content h3');
   const projectDescription = document.querySelector('.project-content p');
-  const liveButton = document.querySelector('.button-group a:first-child');
-  const sourceButton = document.querySelector('.button-group a:last-child');
+  const liveButton = document.querySelector('.project-content .button-group a:first-child');
+  const sourceButton = document.querySelector('.project-content .button-group a:last-child');
 
   // Handle thumbnail clicks
   thumbnails.forEach(thumb => {
