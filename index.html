@@ -8,33 +8,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Mark Tucker | Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
     <!-- Preload critical fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"></noscript>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Welcome to my portfolio, my name is Mark Tucker.
-                    <!-- <span>Hire Me.</span> -->
-                </h1>
-                <a href="https://72525175.netlify.app" class="button subtle-button">View My Resume</a>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-              <h2>About Me</h2>
-              <p>Experienced web developer with a background in building digital solutions for agencies, PLCs, and businesses across Europe. Skilled in developing and maintaining websites, problem-solving, and adapting to evolving technologies. Passionate about creating functional, user-friendly experiences and always looking to refine my skills. Seeking remote opportunities where I can contribute expertise, reliability, and a commitment to quality work.</p>
+                <h1>Welcome to my portfolio</h1>
+                <h2>About Me</h2>
+                <p>I'm an experienced web developer with a background in building digital solutions for agencies, PLCs, and businesses across Europe. Skilled in developing and maintaining websites, problem-solving, and adapting to evolving technologies. Passionate about creating functional, user-friendly experiences and always looking to refine my skills. Seeking remote opportunities where I can contribute expertise, reliability, and a commitment to quality work.</p>
+                <a href="https://72525175.netlify.app" class="button blue">View Resume</a>
             </div>
         </section>
 
         <section id="projects" class="projects">
             <div class="container">
-              <h2>Recent Projects</h2>
+              <h2>Latest Project</h2>
               <div class="project-grid">
                 
                 <!-- Featured Project -->
@@ -42,8 +37,8 @@
                   <h3>Trusted Pet & House Care</h3>
                   <p>We put this project together in a day to give people a quick look at something we were experimenting with and to see if it might spark any interest.</p>
                   <div class="button-group">
-                    <a href="" class="button" target="_blank">View Online</a>
-                    <a href="" class="button" target="_blank">Source Code</a>
+                    <a href="" class="button blue" target="_blank">View Website</a>
+                    <a href="" class="button blue" target="_blank">View Source</a>
                   </div>
                 </div>
                 
@@ -51,10 +46,11 @@
                 <div class="featured-image-container">
                   <img src="/img/project-ps.jpg" alt="Trusted Pet & House Care" class="project-image featured" id="featured-project">
                 </div>
-          
+                
+                <h2>More Projects</h2>
                 <!-- Thumbnail Slider -->
                 <div class="project-slider-container">
-                  <button class="slider-nav prev" aria-label="Previous projects">&lt;</button>
+                  <button class="slider-nav prev blue" aria-label="Previous projects">&lt;</button>
                   <div class="project-slider">
                     <img src="/img/project-ps.jpg" data-live-url="https://howsit.netlify.app/" data-source-url="https://github.com/mrkteq/house--sitter-website" alt="Trusted Pet & House Care" class="thumbnail active" data-title="Trusted Pet & House Care" data-description="We put this project together in a day to give people a quick look at something we were experimenting with and to see if it might spark any interest.">
                     <img src="/img/project-ithm.png" data-live-url="https://ithandyman.netlify.app/" data-source-url="https://github.com/mrkteq/IT-Handyman" alt="#" class="thumbnail" data-title="TechWizard" data-description="I developed this website as a way to explore a proposed idea, aiming to raise awareness and potentially grow it into a business or side project.">
@@ -69,7 +65,7 @@
                     <img src="/img/project-qg.jpg" data-live-url="https://mrkteq-quote-generator.netlify.app/" data-source-url="https://github.com/mrkteq/quote-generator" alt="#" class="thumbnail" data-title="Quote Generator" data-description="Quote Generator built with HTML, CSS and JavaScript. It uses an API to generate random quotes and then allows you to share them on Twitter. It also has a button to generate a new quote and a button to copy the quote to your clipboard.">
                     <img src="/img/project-swapi.jpg" data-live-url="https://mrkteq-starwars-api.netlify.app/" data-source-url="https://github.com/mrkteq/starwars-api" alt="#" class="thumbnail" data-title="Star Wars API" data-description="This is a work-in-progress: It is currently a list of Star Wars characters built with HTML, CSS and JavaScript. It uses an API to generate the list for each movie.">
                   </div>
-                  <button class="slider-nav next" aria-label="Next projects">&gt;</button>
+                  <button class="slider-nav next blue" aria-label="Next projects">&gt;</button>
                 </div>
 
               </div>
@@ -77,16 +73,6 @@
         </section>
 
     </main>
-
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <!-- Mark Tucker <span id="year"><script>document.write(new Date().getFullYear());</script></span> -->
-                <a rel="noreferer" href="https://github.com/mrkteq" target="_blank"><i class="fa fa-github fa-inverse"></i></a>
-                <a rel="noreferer" href="https://www.linkedin.com/in/mark-anthony-tucker/" target="_blank"><i class="fa fa-inverse fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
     <script src="/js/script.js"></script>
 </body>
 </html>
