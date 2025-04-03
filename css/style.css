@@ -16,16 +16,16 @@
 
 :root {
   /* Colors */
-  --color-primary: #1296E6;
+  --color-primary: #1296E6; /* Blue for light mode */
   --color-primary-light: #40abed;
   --color-primary-dark: #0d75b3;
   --color-accent: #2C3E50;
   --color-accent-light: #c1d4f7;
-  
+
   /* Text Colors */
-  --text-color: #2C3E50;
-  --text-color-light: #ffffff;
-  
+  --text-color: #ffffff; /* White text for light mode */
+  --text-color-light: #ffffff; /* White text for buttons and accents */
+
   /* Background */
   --gradient-bg: linear-gradient(45deg, #E6F3FF 0%, #ffffff 100%);
   
@@ -51,8 +51,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   line-height: 1.6;
-  color: var(--text-color-light);
-  background-color: var(--color-primary);
+  color: var(--text-color); /* White text for light mode */
+  background-color: var(--color-primary-dark); /* Blue for light mode */
   min-height: 100vh;
 }
 
@@ -82,7 +82,7 @@ p { margin-bottom: var(--space-md); }
   place-items: center;
   text-align: left;
   padding-block: var(--space-xl);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark); /* Blue for light mode */
 }
 
 /* ==========================================================================
@@ -164,9 +164,9 @@ p { margin-bottom: var(--space-md); }
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
-  background: var(--color-primary);
+  background: transparent;
   border: none;
-  color: var(--text-color-light);
+  color: var(--text-color-light); /* White text for buttons */
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 50%;
@@ -180,7 +180,7 @@ p { margin-bottom: var(--space-md); }
 }
 
 .slider-nav:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary-light); /* Lighter blue on hover */
 }
 
 .slider-nav.prev { left: 0.5rem; }
@@ -198,33 +198,37 @@ p { margin-bottom: var(--space-md); }
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--text-color-light);
-  color: var(--text-color-light);
+  background-color: transparent; /* No background color by default */
+  color: var(--text-color-light); /* White text */
+  border: 2px solid var(--text-color-light); /* White border */
+  box-shadow: none; /* No shadow by default */
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .button:hover {
-  background: var(--color-accent);
-  color: var(--text-color-light);
+  background-color: var(--color-primary); /* Apply background color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+  color: var(--text-color-light); /* Keep text white */
 }
 
-.button.blue {
+/* .button.blue {
   background-color: var(--color-primary);
 }
 
 .button.blue:hover {
-  background-color: var(--color-accent);
-}
+  background-color: var(--color-primary-light);
+} */
 
 /* ==========================================================================
    Section Styles
    ========================================================================== */
 
 .projects {
-  background-color: var(--color-primary);
-  color: var(--text-color-light);
+  background-color: var(--color-primary-dark); /* Blue for light mode */
+  color: var(--text-color); /* White text for light mode */
   padding: var(--space-xl) 0;
 }
 
@@ -260,5 +264,56 @@ p { margin-bottom: var(--space-md); }
   .project-slider-container {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+  }
+}
+
+/* ==========================================================================
+   Dark Mode Styles
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f0f6fc; /* White text for dark mode */
+    --text-color-light: #9198a1; /* Dark yellow for secondary text */
+  }
+
+  body {
+    background-color: #0d1116; /* Black background for dark mode */
+    color: var(--text-color-light); 
+  }
+
+  h1, h2 {
+    color: var(--text-color);
+  }
+
+  .hero {
+    background-color: #0d1116; /* Black background for dark mode */
+  }
+
+  .projects {
+    background-color: #0d1116; /* Black background for dark mode */
+    color: var(--text-color-light); /* White text for dark mode */
+  }
+
+  .slider-nav {
+    color: var(--text-color); /* White text for buttons */
+  }
+
+  .slider-nav:hover {
+    background-color: var(--color-primary-light); /* Lighter yellow on hover */
+  }
+
+  .button {
+    background-color: transparent; /* No background color by default */
+    color: var(--text-color); /* White text */
+    border: 2px solid var(--text-color); /* White border */
+    box-shadow: none; /* No shadow by default */
+  }
+
+  .button:hover {
+    background-color: var(--color-primary); /* Apply yellow background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+    color: var(--text-color); /* Keep text white */
   }
 }
