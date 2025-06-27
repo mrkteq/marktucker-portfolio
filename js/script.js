@@ -49,10 +49,32 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
+  // Ensure correct active thumbnail on load
+  const setActiveThumbnailOnLoad = () => {
+    const featuredSrc = featured.src;
+    let found = false;
+    thumbnails.forEach(thumb => {
+      if (thumb.src === featuredSrc && !found) {
+        thumbnails.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+        // Optionally update project details/buttons as if clicked
+        projectTitle.textContent = thumb.dataset.title;
+        projectDescription.textContent = thumb.dataset.description;
+        liveButton.href = thumb.dataset.liveUrl || '#';
+        sourceButton.href = thumb.dataset.sourceUrl || '#';
+        liveButton.style.display = thumb.dataset.liveUrl ? 'inline-block' : 'none';
+        sourceButton.style.display = thumb.dataset.sourceUrl ? 'inline-block' : 'none';
+        found = true;
+      }
+    });
+  };
+
+  setActiveThumbnailOnLoad();
+
   // Initialize first thumbnail's URLs (optional)
-  const firstThumb = thumbnails[0];
-  if (firstThumb) {
-      liveButton.href = firstThumb.dataset.liveUrl || '#';
-      sourceButton.href = firstThumb.dataset.sourceUrl || '#';
-  }
+//   const firstThumb = thumbnails[0];
+//   if (firstThumb) {
+//       liveButton.href = firstThumb.dataset.liveUrl || '#';
+//       sourceButton.href = firstThumb.dataset.sourceUrl || '#';
+//   }
 });
