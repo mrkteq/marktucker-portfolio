@@ -52,7 +52,6 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--text-color); 
-  background-color: var(--color-primary-dark); 
   min-height: 100vh;
 }
 
@@ -240,6 +239,33 @@ p { margin-bottom: var(--space-md); }
 #more-projects-heading {
   margin-top: var(--space-xl);
   margin-bottom: var(--space-lg);
+}
+
+/* ==========================================================================
+   Header & Footer Styles
+   ========================================================================== */
+
+header.site-header {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--text-color);
+  padding: var(--space-md) 0;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+footer.site-footer {
+  width: 100%;
+  background: var(--color-accent);
+  color: var(--text-color-light);
+  padding: var(--space-sm) 0;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
 }
 
 /* ==========================================================================
