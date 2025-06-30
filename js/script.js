@@ -9,6 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const liveButton = document.querySelector('.project-content .button-group a:first-child');
   const sourceButton = document.querySelector('.project-content .button-group a:last-child');
 
+  // Center the active thumbnail in the slider
+  function centerThumbnail(thumb) {
+    const sliderRect = slider.getBoundingClientRect();
+    const thumbRect = thumb.getBoundingClientRect();
+    const sliderScrollLeft = slider.scrollLeft;
+    const offset = thumbRect.left - sliderRect.left;
+    const center = offset - (sliderRect.width / 2) + (thumbRect.width / 2);
+    slider.scrollTo({
+      left: sliderScrollLeft + center,
+      behavior: 'smooth'
+    });
+  }
+
   // Handle thumbnail clicks
   thumbnails.forEach(thumb => {
       thumb.addEventListener('click', () => {
@@ -31,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Optionally hide buttons if URLs aren't provided
           liveButton.style.display = thumb.dataset.liveUrl ? 'inline-block' : 'none';
           sourceButton.style.display = thumb.dataset.sourceUrl ? 'inline-block' : 'none';
+          centerThumbnail(thumb);
       });
   });
 
@@ -64,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sourceButton.href = thumb.dataset.sourceUrl || '#';
         liveButton.style.display = thumb.dataset.liveUrl ? 'inline-block' : 'none';
         sourceButton.style.display = thumb.dataset.sourceUrl ? 'inline-block' : 'none';
+        centerThumbnail(thumb);
         found = true;
       }
     });
