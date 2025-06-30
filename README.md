@@ -2,6 +2,6 @@
 
 2025 Edition.
 
-![Screenshot](Screenshot.jpg)
+![Screenshot](Screenshot.png)
 
 Featuring: Less JavaScript and more modern CSS.
