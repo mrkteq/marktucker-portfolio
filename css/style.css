@@ -145,11 +145,13 @@ p { margin-bottom: var(--space-md); }
 
 .thumbnail:hover {
   opacity: 0.5;
+  transform: scaleY(1.5);
+  transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
 .thumbnail.active {
   opacity: 1;
-  box-shadow: 0 0 0 4px var(--color-primary);
+  transform: scaleY(1.5);
 }
 
 /* ==========================================================================
