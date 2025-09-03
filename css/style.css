@@ -1,4 +1,40 @@
 /* ==========================================================================
+   Color Preview & Usage (for quick reference)
+   --------------------------------------------------------------------------
+   Primary (brand):        --color-primary: #1296E6 (original blue)
+   Primary light:          --color-primary-light: #40ABED
+   Primary dark:           --color-primary-dark: #0D75B3
+   Accent (fun):           --color-accent: #FF6B6B (coral)
+   Accent light:           --color-accent-light: #FFD1DC
+   Surfaces:               --surface (cards), --surface-muted (page bg)
+   Text:                   --text-color (titles), --text-color-light (body)
+
+   Defaults:
+   - Buttons on light surfaces: outlined primary → fill on hover
+   - Buttons on dark hero: white outlined → fill white on hover
+   - Thumbnails focus outline uses primary for better visibility on light
+   ==========================================================================
+*/
+/* --------------------------------------------------------------------------
+   Brand Tokens (HEX + HSL)
+   - Use HSL for nuanced tints/shades; keep hue consistent for brand cohesion
+   HEX                         HSL
+   --color-primary             #1296E6   hsl(204, 84%, 49%)
+   --color-primary-light       #40ABED   hsl(203, 82%, 60%)
+   --color-primary-dark        #0D75B3   hsl(203, 86%, 38%)
+   --color-accent              #FF6B6B   hsl(0, 100%, 71%)
+   --color-accent-light        #FFD1DC   hsl(348, 100%, 91%)
+   --text-color                #0F172A   hsl(222, 47%, 15%)
+   --text-color-light          #334155   hsl(213, 27%, 31%)
+   --surface                   #FCFCFE   hsl(240, 50%, 99%)
+   --surface-muted             #F4F6FB   hsl(225, 50%, 97%)
+   Notes:
+   - To create a softer hover, increase L (lightness) by 6–10%.
+   - For pressed/active states, decrease L by ~8% and increase S slightly.
+   - Keep hue within ±2° for brand consistency.
+   -------------------------------------------------------------------------- */
+
+/* ==========================================================================
    Base Styles & Reset
    ========================================================================== */
 
@@ -15,32 +51,51 @@
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --color-primary: #1296E6; 
-  --color-primary-light: #40abed;
-  --color-primary-dark: #0d75b3;
-  --color-accent: #2C3E50;
-  --color-accent-light: #c1d4f7;
+  /* Fresh Modern Palette (less indigo, keep original blue) */
+  --color-primary: #1296E6;           /* Original blue */
+  --color-primary-light: #40ABED;     /* Brighter blue */
+  --color-primary-dark: #0D75B3;      /* Deeper blue */
+  --color-accent: #FF6B6B;            /* Coral */
+  --color-accent-light: #FFD1DC;      /* Soft Coral Pink */
+
+  /* Surfaces & Borders */
+  --surface: #FCFCFE;                 /* Near-white cool */
+  --surface-muted: #F4F6FB;           /* Muted cool background */
+  --surface-tint: #E6F3FF;            /* Light blue tint */
+  --surface-tint-2: #EEF6FF;          /* Lighter blue tint */
+  --border-color: rgba(9, 17, 34, 0.08);
+  --shadow-color: rgba(9, 17, 34, 0.08);
 
   /* Text Colors */
-  --text-color: #ffffff; 
-  --text-color-light: #ffffff; 
+  --text-color: #0F172A;              /* Slate 900 */
+  --text-color-light: #334155;        /* Slate 700 */
+
+  /* Utility Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --focus-on-dark: #ffffff;
+  --link-hover: #BBDFFC;
+  --footer-text: #E9EEFF;
+
+  /* Footer Gradient Stops */
+  --footer-bg-start: #0B1220;
+  --footer-bg-end: #111A2E;
 
   /* Background */
-  --gradient-bg: linear-gradient(45deg, #E6F3FF 0%, #ffffff 100%);
+  --gradient-bg: linear-gradient(45deg, #E6F3FF 0%, #FCFCFE 100%);
   
   /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
   
   /* Typography */
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  --font-size-base: clamp(1rem, 3vw, 1.4rem);
-  --font-size-h1: clamp(2rem, 5vw, 3.5rem);
-  --font-size-h2: clamp(1.5rem, 4vw, 2.5rem);
+  --font-size-base: clamp(1rem, 3vw, 1.125rem);
+  --font-size-h1: clamp(2rem, 5vw, 3rem);
+  --font-size-h2: clamp(1.5rem, 4vw, 2.25rem);
 }
 
 /* ==========================================================================
@@ -53,6 +108,7 @@ body {
   line-height: 1.6;
   color: var(--text-color); 
   min-height: 100vh;
+  background: var(--surface-muted);
 }
 
 /* Typography */
@@ -82,6 +138,7 @@ p { margin-bottom: var(--space-md); }
   text-align: left;
   padding-block: var(--space-xl);
   background-color: var(--color-primary-dark); 
+  color: var(--color-white);
 }
 
 /* ==========================================================================
@@ -91,7 +148,17 @@ p { margin-bottom: var(--space-md); }
 /* Project Grid */
 .project-grid {
   display: grid;
-  gap: var(--space-md);
+  gap: var(--space-lg);
+}
+
+/* Featured Project Card */
+.featured-project .project-grid {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  box-shadow: 0 10px 24px var(--shadow-color);
+  color: var(--text-color);
 }
 
 /* Featured Image */
@@ -101,7 +168,7 @@ p { margin-bottom: var(--space-md); }
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #f0f0f0;
+  background-color: var(--surface-tint);
 }
 
 .project-image.featured {
@@ -126,6 +193,7 @@ p { margin-bottom: var(--space-md); }
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding: var(--space-md) 0;
+  scroll-snap-type: x mandatory;
 }
 
 .project-slider::-webkit-scrollbar {
@@ -133,25 +201,31 @@ p { margin-bottom: var(--space-md); }
 }
 
 .thumbnail {
-  width: 140px;
-  height: 80px;
-  border-radius: 4px;
+  width: 160px;
+  height: 100px;
+  border-radius: 8px;
   cursor: pointer;
-  opacity: 0.3;
-  transition: opacity 0.3s ease;
+  opacity: 0.75;
+  transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
   flex-shrink: 0;
-  background-color: #f0f0f0;
+  background-color: var(--surface-tint-2);
+  scroll-snap-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
 }
 
-.thumbnail:hover {
-  opacity: 0.5;
-  transform: scaleY(1.5);
-  transition: transform 0.3s ease, opacity 0.3s ease; 
+.thumbnail:hover,
+.thumbnail:focus-visible {
+  opacity: 1;
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px rgba(0,0,0,.18);
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .thumbnail.active {
   opacity: 1;
-  transform: scaleY(1.5);
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(0,0,0,.22);
 }
 
 /* ==========================================================================
@@ -165,7 +239,7 @@ p { margin-bottom: var(--space-md); }
   transform: translateY(-50%);
   background: transparent;
   border: none;
-  color: var(--text-color-light);
+  color: var(--color-white);
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 50%;
@@ -175,8 +249,13 @@ p { margin-bottom: var(--space-md); }
   align-items: center;
   justify-content: center;
   z-index: 1;
-  outline: 2px solid var(--text-color-light);
+  outline: 2px solid var(--color-white);
   animation: slider-nav-pulse 1.2s infinite cubic-bezier(.4,1.3,.6,1);
+}
+
+.slider-nav:focus-visible {
+  outline: 3px solid var(--color-white);
+  outline-offset: 2px;
 }
 
 .slider-nav.disabled {
@@ -187,7 +266,7 @@ p { margin-bottom: var(--space-md); }
 }
 
 .slider-nav:hover {
-  background-color: var(--text-color); 
+  background-color: var(--color-white); 
   color: var(--color-primary);
 }
 
@@ -209,23 +288,41 @@ p { margin-bottom: var(--space-md); }
   gap: var(--space-md);
 }
 
+/* Default buttons: optimized for light surfaces */
 .button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   background-color: transparent; 
-  color: var(--text-color-light); 
-  border: 2px solid var(--text-color-light); 
+  color: var(--color-primary); 
+  border: 2px solid var(--color-primary); 
   box-shadow: none; 
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 .button:hover {
-  background-color: var(--text-color); 
+  background-color: var(--color-primary); 
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
-  color: var(--color-primary); 
+  color: var(--color-white); 
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+/* Hero overrides: buttons on dark background */
+.hero .button {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.hero .button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* ==========================================================================
@@ -234,7 +331,7 @@ p { margin-bottom: var(--space-md); }
 
 .projects {
   background-color: var(--color-primary-dark);
-  color: var(--text-color); 
+  color: var(--color-white); 
   padding: var(--space-xl) 0;
 }
 
@@ -249,9 +346,9 @@ p { margin-bottom: var(--space-md); }
 
 header.site-header {
   width: 100%;
-  /* Subtle gradient background for depth */
+  /* Modern gradient */
   background: linear-gradient(90deg, var(--color-primary) 60%, var(--color-primary-light) 100%);
-  color: var(--text-color);
+  color: var(--color-white);
   padding: var(--space-lg) 0 var(--space-md) 0;
   text-align: center;
   font-size: 1.5rem;
@@ -269,22 +366,22 @@ header.site-header::after {
   display: block;
   width: 80px;
   height: 4px;
-  background: var(--color-accent-light);
+  background: var(--color-accent);
   margin: 0.5rem auto 0 auto;
   border-radius: 2px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 footer.site-footer {
   width: 100%;
-  /* Subtle top border/accent and gradient background */
-  background: linear-gradient(90deg, var(--color-accent) 70%, #34495e 100%);
-  color: var(--text-color-light);
+  /* Deep cool gradient */
+  background: linear-gradient(90deg, var(--footer-bg-start) 70%, var(--footer-bg-end) 100%);
+  color: var(--footer-text);
   padding: var(--space-lg) 0 var(--space-md) 0;
   text-align: center;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
-  opacity: 0.92;
+  opacity: 0.98;
   border-top: 3px solid var(--color-primary-light);
   font-family: 'Segoe UI', 'Arial', sans-serif;
   box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.06);
@@ -299,7 +396,7 @@ footer.site-footer a {
 
 footer.site-footer a:hover,
 footer.site-footer a:focus {
-  color: var(--color-primary);
+  color: var(--link-hover);
   text-decoration: none;
 }
 
@@ -313,6 +410,7 @@ footer.site-footer a:focus {
     grid-template-rows: auto;
     max-width: 1200px;
     margin: 1rem auto;
+    gap: var(--space-xl);
   }
   
   .project-content {
@@ -323,7 +421,7 @@ footer.site-footer a:focus {
   .featured-image-container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    max-width: 320px;
+    max-width: 420px;
     margin: 0 auto;
   }
   
@@ -337,8 +435,8 @@ footer.site-footer a:focus {
       display: inline-block;
       font-family: 'Pacifico', 'Comic Sans MS', cursive, sans-serif;
       font-size: 1.1em;
-      color: var(--text-color-light);
-      opacity: 0.5;
+      color: var(--color-white);
+      opacity: 0.85;
       transform: rotate(-12deg);
       vertical-align: middle;
       position: relative;
@@ -350,12 +448,23 @@ footer.site-footer a:focus {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #f0f6fc; 
-    --text-color-light: #9198a1; 
+    --text-color: #E6ECF5; 
+    --text-color-light: #C8D1E1; 
+    --surface: #0B1220;
+    --surface-muted: #070B13;
+    --border-color: rgba(255, 255, 255, 0.12);
+    --shadow-color: rgba(0, 0, 0, 0.4);
+
+    --color-primary: #40ABED;       /* Slightly brighter in dark */
+    --color-primary-light: #7BC6F6;
+    --color-primary-dark: #0D75B3;
+    --color-accent: #FF7A90;        /* Warm accent for fun */
+    --color-accent-light: #FFC2D1;
+    --footer-text: #E9EEFF;
   }
 
   body {
-    background-color: #27303b; 
+    background-color: var(--surface-muted); 
     color: var(--text-color-light); 
   }
 
@@ -364,11 +473,40 @@ footer.site-footer a:focus {
   }
 
   .hero {
-    background-color: #27303b; 
+    background-color: var(--color-primary-dark); 
   }
 
   .projects {
-    background-color: #27303b; 
-    color: var(--text-color-light); 
+    background-color: var(--color-primary-dark); 
+    color: var(--text-color); 
+  }
+}
+
+/* Accessibility: skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-white);
+  color: var(--color-black);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }

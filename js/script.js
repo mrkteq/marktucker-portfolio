@@ -110,4 +110,24 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   setActiveThumbnailOnLoad();
+
+  // Accessibility for thumbnails and nav
+  thumbnails.forEach(thumb => {
+    thumb.tabIndex = 0;
+    thumb.setAttribute('role', 'button');
+    if (thumb.dataset && thumb.dataset.title) {
+      thumb.setAttribute('aria-label', `View ${thumb.dataset.title}`);
+    }
+    thumb.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        thumb.click();
+      }
+      if (e.key === 'ArrowRight') nextBtn.click();
+      if (e.key === 'ArrowLeft') prevBtn.click();
+    });
+  });
+
+  prevBtn.setAttribute('aria-controls', 'more-projects');
+  nextBtn.setAttribute('aria-controls', 'more-projects');
 });
