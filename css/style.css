@@ -542,8 +542,8 @@ footer.site-footer a:focus {
     --color-primary: #40ABED;       /* Slightly brighter in dark */
     --color-primary-light: #7BC6F6;
     --color-primary-dark: #0D75B3;
-    --color-accent: #FF7A90;        /* Warm accent for fun */
-    --color-accent-light: #FFC2D1;
+    --color-accent: #FF6B6B;        /* Keep coral accent consistent in dark */
+    --color-accent-light: #FFD1DC;  /* Matching soft coral in dark */
     --footer-text: #E9EEFF;
   }
 
@@ -563,6 +563,13 @@ footer.site-footer a:focus {
   .projects {
     background-color: var(--color-primary-dark); 
     color: var(--text-color); 
+  }
+
+  /* Improve button focus visibility on dark backgrounds */
+  .button:focus-visible,
+  .hero .button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
   }
 }
 
