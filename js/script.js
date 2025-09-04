@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadMoreBtn = document.getElementById('load-more-projects');
 
   // Pagination settings
-  const PAGE_SIZE = 7;
+  const PAGE_SIZE = 10;
   let allProjects = [];
   let visibleProjects = [];
   let currentPage = 0;
@@ -17,19 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const GROUP_MAP = {
     // Apps & demos
-    'bg-gen': 'Apps & Demos',
+    'background-generator': 'Apps & Demos',
     'countries-api': 'Apps & Demos',
-    'quote-gen': 'Apps & Demos',
+    'quote-generator': 'Apps & Demos',
     'recipe-finder': 'Apps & Demos',
     'responsive-layout': 'Apps & Demos',
-    'robofriend': 'Apps & Demos',
-    'robofriends': 'Apps & Demos',
+    'robo-friend': 'Apps & Demos',
+    'robo-friends': 'Apps & Demos',
     'smart-brain': 'Apps & Demos',
-    'sportsbook': 'Apps & Demos',
-    'starwars': 'Apps & Demos',
-    'signup': 'Apps & Demos',
+    'sports-book': 'Apps & Demos',
+    'starwars-api': 'Apps & Demos',
+    'sign-up': 'Apps & Demos',
     'website-startup': 'Apps & Demos',
-    'pure-html': 'Apps & Demos'
+    'pure-html-and-css': 'Apps & Demos',
+    'bed-and-breakfast': 'Apps & Demos',
+    'coastal-calm': 'Apps & Demos',
+    'heiko-reformas': 'Apps & Demos',
+    'it-handyman': 'Apps & Demos',
+    'paws-and-hearts': 'Apps & Demos',
+    'trusted-house-and-pet-sitters': 'Apps & Demos',
+    'reviews-aggregator': 'Apps & Demos'
     // Everything else falls back to Client Sites
   };
 
@@ -209,7 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Merge imageMap into projects by slug
       allProjects = allProjects.map(p => {
         const slug = p.slug || '';
-        const map = imageMap[slug];
+        // Handle renamed/mismatched slugs between data and generated images
+        const aliasSlug = slug === 'background-generator' ? 'background-gen' : slug;
+        const map = imageMap[aliasSlug];
         if (map) {
           p.images = p.images || {};
           p.images.thumb = {
