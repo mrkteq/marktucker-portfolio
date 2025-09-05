@@ -103,7 +103,7 @@
   },
   {
     "slug": "croydon",
-    "title": "Croydon",
+    "title": "Croydon Council",
     "images": {
       "thumb": { "src": "/img/project-croydon.jpg" },
       "featured": { "src": "/img/project-croydon.jpg" },
@@ -247,7 +247,7 @@
   },
   {
     "slug": "kimal",
-    "title": "Kimal Healthcare",
+    "title": "Kimal Healthcare Innovation",
     "images": {
       "thumb": { "src": "/img/project-kimal.jpg" },
       "featured": { "src": "/img/project-kimal.jpg" },
@@ -355,7 +355,7 @@
   },
   {
     "slug": "pondergrove",
-    "title": "Pondergrove",
+    "title": "Pondergrove Management Systems",
     "images": {
       "thumb": { "src": "/img/project-pondergrove.jpg" },
       "featured": { "src": "/img/project-pondergrove.jpg" },
@@ -364,7 +364,7 @@
   },
   {
     "slug": "quote-generator",
-    "title": "Quote Generator",
+    "title": "Quote Generator Demo",
     "images": {
       "thumb": { "src": "/img/project-quote-generator.jpg" },
       "featured": { "src": "/img/project-quote-generator.jpg" },
@@ -373,7 +373,7 @@
   },
   {
     "slug": "recipe-finder",
-    "title": "Recipe Finder",
+    "title": "Recipe Finder Demo",
     "images": {
       "thumb": { "src": "/img/project-recipe-finder.jpg" },
       "featured": { "src": "/img/project-recipe-finder.jpg" },
@@ -391,7 +391,7 @@
   },
   {
     "slug": "responsive-layout",
-    "title": "Responsive Layout",
+    "title": "Responsive UI Demo",
     "images": {
       "thumb": { "src": "/img/project-responsive-layout.jpg" },
       "featured": { "src": "/img/project-responsive-layout.jpg" },
@@ -400,7 +400,7 @@
   },
   {
     "slug": "ressance",
-    "title": "Ressance",
+    "title": "Ressance Homes",
     "images": {
       "thumb": { "src": "/img/project-ressance.jpg" },
       "featured": { "src": "/img/project-ressance.jpg" },
@@ -418,7 +418,7 @@
   },
   {
     "slug": "robo-friend",
-    "title": "Robofriend",
+    "title": "Robofriend Demo",
     "images": {
       "thumb": { "src": "/img/project-robofriend.jpg" },
       "featured": { "src": "/img/project-robofriend.jpg" },
@@ -427,7 +427,7 @@
   },
   {
     "slug": "robo-friends",
-    "title": "Robofriends",
+    "title": "Robofriends Demo",
     "images": {
       "thumb": { "src": "/img/project-robo-friends.jpg" },
       "featured": { "src": "/img/project-robo-friends.jpg" },
@@ -436,7 +436,7 @@
   },
   {
     "slug": "rotherham",
-    "title": "Rotherham",
+    "title": "Rotherham Metropolitan Borough Council",
     "images": {
       "thumb": { "src": "/img/project-rotherham.jpg" },
       "featured": { "src": "/img/project-rotherham.jpg" },
@@ -445,7 +445,7 @@
   },
   {
     "slug": "runnymede",
-    "title": "Runnymede",
+    "title": "Runnymede Borough Council",
     "images": {
       "thumb": { "src": "/img/project-runnymede.jpg" },
       "featured": { "src": "/img/project-runnymede.jpg" },
@@ -454,7 +454,7 @@
   },
   {
     "slug": "rushmoor",
-    "title": "Rushmoor",
+    "title": "Rushmoor Borough Council",
     "images": {
       "thumb": { "src": "/img/project-rushmoor.jpg" },
       "featured": { "src": "/img/project-rushmoor.jpg" },
@@ -481,7 +481,7 @@
   },
   {
     "slug": "shaw",
-    "title": "Shaw Care",
+    "title": "Shaw Healthcare",
     "images": {
       "thumb": { "src": "/img/project-shaw.jpg" },
       "featured": { "src": "/img/project-shaw.jpg" },
@@ -490,7 +490,7 @@
   },
   {
     "slug": "sign-up",
-    "title": "Sign Up Layout",
+    "title": "Sign-Up Form Demo",
     "images": {
       "thumb": { "src": "/img/project-sign-up.jpg" },
       "featured": { "src": "/img/project-sign-up.jpg" },
@@ -499,7 +499,7 @@
   },
   {
     "slug": "smart-brain",
-    "title": "Smart Brain",
+    "title": "Smart Brain App Demo",
     "images": {
       "thumb": { "src": "/img/project-smart-brain.jpg" },
       "featured": { "src": "/img/project-smart-brain.jpg" },
@@ -508,7 +508,7 @@
   },
   {
     "slug": "southwark",
-    "title": "Southwark",
+    "title": "Southwark Council",
     "images": {
       "thumb": { "src": "/img/project-southwark.jpg" },
       "featured": { "src": "/img/project-southwark.jpg" },
@@ -517,7 +517,7 @@
   },
   {
     "slug": "sports-book",
-    "title": "Sports Book",
+    "title": "Sports Book Demo",
     "images": {
       "thumb": { "src": "/img/project-sports-book.jpg" },
       "featured": { "src": "/img/project-sports-book.jpg" },
@@ -526,7 +526,7 @@
   },
   {
     "slug": "starwars-api",
-    "title": "Star Wars Api",
+    "title": "Star Wars Api Demo",
     "images": {
       "thumb": { "src": "/img/project-starwars-api.jpg" },
       "featured": { "src": "/img/project-starwars-api.jpg" },
@@ -535,7 +535,7 @@
   },
   {
     "slug": "stoke-on-trent",
-    "title": "Stoke on Trent",
+    "title": "City of Stoke on Trent Council",
     "images": {
       "thumb": { "src": "/img/project-stoke-on-trent.jpg" },
       "featured": { "src": "/img/project-stoke-on-trent.jpg" },
@@ -544,7 +544,7 @@
   },
   {
     "slug": "sutton",
-    "title": "Sutton",
+    "title": "London Borough of Sutton Council",
     "images": {
       "thumb": { "src": "/img/project-sutton.jpg" },
       "featured": { "src": "/img/project-sutton.jpg" },
@@ -553,7 +553,7 @@
   },
   {
     "slug": "synergy",
-    "title": "Synergy",
+    "title": "Synergy Digital Marketing Agency",
     "images": {
       "thumb": { "src": "/img/project-synergy.jpg" },
       "featured": { "src": "/img/project-synergy.jpg" },
@@ -562,7 +562,7 @@
   },
   {
     "slug": "trusted-house-and-pet-sitters",
-    "title": "Trusted House and Pet Sitters",
+    "title": "Trusted House and Pet Sitters Demo",
     "images": {
       "thumb": { "src": "/img/project-trusted-house-and-pet-sitters.jpg" },
       "featured": { "src": "/img/project-trusted-house-and-pet-sitters.jpg" },
@@ -571,7 +571,7 @@
   },
   {
     "slug": "website-startup",
-    "title": "Website Startup",
+    "title": "Website Startup Demo",
     "images": {
       "thumb": { "src": "/img/project-website-startup.jpg" },
       "featured": { "src": "/img/project-website-startup.jpg" },
@@ -580,7 +580,7 @@
   },
   {
     "slug": "west-lindsey",
-    "title": "West Lindsey",
+    "title": "West Lindsey District Council",
     "images": {
       "thumb": { "src": "/img/project-west-lindsey.jpg" },
       "featured": { "src": "/img/project-west-lindsey.jpg" },
@@ -589,7 +589,7 @@
   },
   {
     "slug": "reviews-aggregator",
-    "title": "Reviews Aggregator",
+    "title": "Reviews Aggregator Demo",
     "images": {
       "thumb": { "src": "/img/project-reviews-aggregator.jpg" },
       "featured": { "src": "/img/project-reviews-aggregator.jpg" },
