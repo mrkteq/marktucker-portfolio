@@ -1,7 +1,7 @@
 [
   {
     "slug": "pure-html-and-css",
-    "title": "Pure HTML and CSS Websites",
+    "title": "Pure HTML and CSS Websites Demo",
     "images": {
       "thumb": { "src": "/img/project-pure-html-and-css.jpg" },
       "featured": { "src": "/img/project-pure-html-and-css.jpg" },
@@ -49,7 +49,7 @@
   },
   {
     "slug": "background-generator",
-    "title": "Background Generator",
+    "title": "Background Generator Demo",
     "images": {
       "thumb": { "src": "/img/project-background-generator.jpg" },
       "featured": { "src": "/img/project-background-generator.jpg" },
@@ -94,7 +94,7 @@
   },
   {
     "slug": "countries-api",
-    "title": "Countries REST Api",
+    "title": "Countries REST Api Demo",
     "images": {
       "thumb": { "src": "/img/project-countries-api.jpg" },
       "featured": { "src": "/img/project-countries-api.jpg" },
