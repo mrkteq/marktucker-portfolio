@@ -1,7 +1,7 @@
 [
   {
     "slug": "pure-html-and-css",
-    "title": "Pure Html and Css",
+    "title": "Pure HTML and CSS",
     "images": {
       "thumb": { "src": "/img/project-pure-html-and-css.jpg" },
       "featured": { "src": "/img/project-pure-html-and-css.jpg" },
@@ -13,7 +13,7 @@
   },
   {
     "slug": "argyll",
-    "title": "Argyll",
+    "title": "Argyll & Bute Council",
     "images": {
       "thumb": { "src": "/img/project-argyll.jpg" },
       "featured": { "src": "/img/project-argyll.jpg" },
@@ -22,7 +22,7 @@
   },
   {
     "slug": "aylesbury",
-    "title": "Aylesbury Vale",
+    "title": "Aylesbury Vale District Council",
     "images": {
       "thumb": { "src": "/img/project-aylesbury.jpg" },
       "featured": { "src": "/img/project-aylesbury.jpg" },
