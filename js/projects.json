@@ -1,7 +1,20 @@
 [
   {
+    "slug": "pure-html-and-css",
+    "title": "Pure HTML and CSS Websites Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
+    "images": {
+      "thumb": { "src": "/img/project-pure-html-and-css.jpg" },
+      "featured": { "src": "/img/project-pure-html-and-css.jpg" },
+      "alt": "Pure Html"
+    },
+    "liveUrl": "https://marktucker-purehtmlco.netlify.app/",
+    "sourceUrl": "https://github.com/mrkteq/marktucker-purehtmlco"
+  },
+  {
     "slug": "bed-and-breakfast",
     "title": "Bed and Breakfast Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-bed-and-breakfast.jpg" },
       "featured": { "src": "/img/project-bed-and-breakfast.jpg" },
@@ -11,6 +24,7 @@
   {
     "slug": "background-generator",
     "title": "Background Generator Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-background-generator.jpg" },
       "featured": { "src": "/img/project-background-generator.jpg" },
@@ -20,6 +34,7 @@
   {
     "slug": "coastal-calm",
     "title": "Coastal Calm Retreat Website Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-coastal-calm.jpg" },
       "featured": { "src": "/img/project-coastal-calm.jpg" },
@@ -29,6 +44,7 @@
   {
     "slug": "countries-api",
     "title": "Countries REST Api Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-countries-api.jpg" },
       "featured": { "src": "/img/project-countries-api.jpg" },
@@ -38,6 +54,7 @@
   {
     "slug": "heiko-reformas",
     "title": "Building Renovation Specialist Website Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-heiko-reformas.jpg" },
       "featured": { "src": "/img/project-heiko-reformas.jpg" },
@@ -47,6 +64,7 @@
   {
     "slug": "it-handyman",
     "title": "IT Handyman Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-it-handyman.jpg" },
       "featured": { "src": "/img/project-it-handyman.jpg" },
@@ -56,6 +74,7 @@
   {
     "slug": "paws-and-hearts",
     "title": "Paws and Hearts Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-paws-and-hearts.jpg" },
       "featured": { "src": "/img/project-paws-and-hearts.jpg" },
@@ -63,20 +82,9 @@
     }
   },
   {
-    "slug": "pure-html-and-css",
-    "title": "Pure HTML and CSS Websites Demo",
-    "images": {
-      "thumb": { "src": "/img/project-pure-html-and-css.jpg" },
-      "featured": { "src": "/img/project-pure-html-and-css.jpg" },
-      "alt": "Pure Html"
-    },
-    "description": "This is a simple static website built with just HTML and CSS. It features a responsive design, clean layout, and easy navigation. The site includes multiple sections and is a great user experience across all devices.",
-    "liveUrl": "https://marktucker-purehtmlco.netlify.app/",
-    "sourceUrl": "https://github.com/mrkteq/marktucker-purehtmlco"
-  },
-  {
     "slug": "quote-generator",
     "title": "Quote Generator Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-quote-generator.jpg" },
       "featured": { "src": "/img/project-quote-generator.jpg" },
@@ -86,6 +94,7 @@
   {
     "slug": "recipe-finder",
     "title": "Recipe Finder Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-recipe-finder.jpg" },
       "featured": { "src": "/img/project-recipe-finder.jpg" },
@@ -95,6 +104,7 @@
   {
     "slug": "responsive-layout",
     "title": "Responsive UI Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-responsive-layout.jpg" },
       "featured": { "src": "/img/project-responsive-layout.jpg" },
@@ -104,6 +114,7 @@
   {
     "slug": "robo-friend",
     "title": "Robofriend Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-robofriend.jpg" },
       "featured": { "src": "/img/project-robofriend.jpg" },
@@ -113,6 +124,7 @@
   {
     "slug": "robo-friends",
     "title": "Robofriends Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-robo-friends.jpg" },
       "featured": { "src": "/img/project-robo-friends.jpg" },
@@ -122,6 +134,7 @@
   {
     "slug": "sign-up",
     "title": "Sign-Up Form Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-sign-up.jpg" },
       "featured": { "src": "/img/project-sign-up.jpg" },
@@ -131,6 +144,7 @@
   {
     "slug": "smart-brain",
     "title": "Smart Brain App Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-smart-brain.jpg" },
       "featured": { "src": "/img/project-smart-brain.jpg" },
@@ -138,17 +152,9 @@
     }
   },
   {
-    "slug": "sports-book",
-    "title": "Sports Book Demo",
-    "images": {
-      "thumb": { "src": "/img/project-sports-book.jpg" },
-      "featured": { "src": "/img/project-sports-book.jpg" },
-      "alt": "Sportsbook"
-    }
-  },
-  {
     "slug": "starwars-api",
     "title": "Star Wars Api Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-starwars-api.jpg" },
       "featured": { "src": "/img/project-starwars-api.jpg" },
@@ -158,6 +164,7 @@
   {
     "slug": "trusted-house-and-pet-sitters",
     "title": "Trusted House and Pet Sitters Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-trusted-house-and-pet-sitters.jpg" },
       "featured": { "src": "/img/project-trusted-house-and-pet-sitters.jpg" },
@@ -167,6 +174,7 @@
   {
     "slug": "website-startup",
     "title": "Website Startup Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-website-startup.jpg" },
       "featured": { "src": "/img/project-website-startup.jpg" },
@@ -176,10 +184,21 @@
   {
     "slug": "reviews-aggregator",
     "title": "Reviews Aggregator Demo",
+    "description": "Building demo apps while studying with Zero to Mastery Academy and independently up-skilling after a career change. Focused on strengthening front-end and full-stack skills through hands-on practice with modern JavaScript, responsive design, and best practices.",
     "images": {
       "thumb": { "src": "/img/project-reviews-aggregator.jpg" },
       "featured": { "src": "/img/project-reviews-aggregator.jpg" },
       "alt": "Reviews Aggregator"
+    }
+  },
+  {
+    "slug": "sports-book",
+    "title": "Gambling Platforms",
+    "description": "Worked as a UI developer on Sportsbook, Casino, eSports, and Slots Platforms, using AngularJS, CSS, and GitHub within agile teams. Contributed to front-end product design, delivering responsive, engaging interfaces and troubleshooting UI issues for high-traffic gambling products.",
+    "images": {
+      "thumb": { "src": "/img/project-sports-book.jpg" },
+      "featured": { "src": "/img/project-sports-book.jpg" },
+      "alt": "Sportsbook"
     }
   },
   {

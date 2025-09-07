@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'robo-friend': 'Apps & Demos',
     'robo-friends': 'Apps & Demos',
     'smart-brain': 'Apps & Demos',
-    'sports-book': 'Apps & Demos',
     'starwars-api': 'Apps & Demos',
     'sign-up': 'Apps & Demos',
     'website-startup': 'Apps & Demos',
