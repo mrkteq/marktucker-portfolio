@@ -281,7 +281,7 @@ p { margin-bottom: var(--space-md); }
   height: 10px;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-white);
   opacity: 0.7;
   cursor: pointer;
   padding: 0;
@@ -294,7 +294,7 @@ p { margin-bottom: var(--space-md); }
 }
 
 .project-dots .dot.active {
-  background: var(--color-primary);
+  background: var(--color-white);
   opacity: 1;
   width: 12px;
   height: 12px;
@@ -317,10 +317,10 @@ p { margin-bottom: var(--space-md); }
 .filter-chip {
   font-size: 12px;
   padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid var(--color-primary);
+  border-radius: 3px;
+  border: 1px solid var(--color-white);
   background: var(--color-primary-dark);
-  color: var(--color-primary);
+  color: var(--color-white);
   box-shadow: none;
   cursor: pointer;
   transition: all 150ms ease;
@@ -328,8 +328,8 @@ p { margin-bottom: var(--space-md); }
 
 .filter-chip[aria-pressed="true"],
 .filter-chip:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-primary);
   box-shadow: 0 1px 2px var(--shadow-color);
   cursor: default;
 }
@@ -357,8 +357,8 @@ p { margin-bottom: var(--space-md); }
   display: inline-block;
   padding: 0.75rem 1.25rem;
   background-color: transparent; 
-  color: var(--color-primary); 
-  border: 2px solid var(--color-primary); 
+  color: var(--color-white); 
+  border: 2px solid var(--color-white); 
   box-shadow: none; 
   text-decoration: none;
   border-radius: 6px;
@@ -367,10 +367,10 @@ p { margin-bottom: var(--space-md); }
 }
 
 .button:hover {
-  background-color: var(--color-primary); 
+  background-color: var(--color-white); 
   transform: translateY(-2px);
   box-shadow: 0 6px 8px var(--shadow-color); 
-  color: var(--color-white); 
+  color: var(--color-primary); 
   cursor: pointer;
 }
 
@@ -379,15 +379,15 @@ p { margin-bottom: var(--space-md); }
   outline-offset: 2px;
 }
 
-/* Hero overrides: buttons on dark background */
-.hero .button {
-  color: var(--color-white);
-  border-color: var(--color-white);
+/* Featured Project overrides: buttons on dark background */
+.project-grid .button {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
-.hero .button:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
+.project-grid .button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 /* ==========================================================================
