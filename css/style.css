@@ -469,9 +469,9 @@ footer.site-footer a:focus {
     --border-color: rgba(255, 255, 255, 0.12);
     --shadow-color: rgba(0, 0, 0, 0.4);
 
-    --color-primary: #40ABED;       /* Slightly brighter in dark */
-    --color-primary-light: #7BC6F6;
-    --color-primary-dark: #0D75B3;
+    --color-primary: #3B82F6;       /* Deep navy blue for dark mode */
+    --color-primary-light: #60A5FA; /* Subtle highlight */
+    --color-primary-dark: #1E40AF;  /* Rich navy depth */
     --color-accent: #FF6B6B;        /* Keep coral accent consistent in dark */
     --color-accent-light: #FFD1DC;  /* Matching soft coral in dark */
     --footer-text: #E9EEFF;
