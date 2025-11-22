@@ -1,19 +1,37 @@
-# Portfolio
+# Mark Tucker - Portfolio
 
-2025 Edition.
+A clean, responsive portfolio website showcasing my web development projects and skills.
 
-![Screenshot](Screenshot.png)
+![Portfolio Screenshot](Screenshot.png)
 
-Featuring: Less JavaScript and more modern CSS.
+**[View Live Demo](https://marktucker-portfolio.netlify.app/)**
 
-## Responsive images
+## Tech Stack
+
+- **HTML5** - Semantic markup with custom web components
+- **CSS3** - Modern responsive design with CSS Grid and Flexbox
+- **Vanilla JavaScript** - Custom animated logo component
+- **Sharp** - Automated responsive image generation
+
+## Features
+
+- Animated SVG logo with customizable timing
+- Fully responsive design across all devices
+- Dark mode support
+- Accessibility-focused (semantic HTML, ARIA labels)
+- Optimized responsive images with automated pipeline
+- Fast loading with minimal JavaScript
+
+## Development
+
+### Responsive Image Pipeline
 
 This repo includes a simple image pipeline to generate responsive assets and a JSON map consumed by the site.
 
-1. Put your original images in `img/` named like `project-<slug>.jpg`.
-2. Install deps and run the build:
+1. Place original images in `img/` named as `project-<slug>.jpg`.
+2. Install dependencies and run the build:
    - `npm install`
    - `npm run build:images`
-3. Output goes to `img/optimized/<slug>/` and a map is written to `js/images-map.json` used automatically by the site.
+3. Optimised versions are generated in `img/optimized/<slug>/` and a map is written to `js/images-map.json` and used automatically by the site.
 
-No changes to HTML are required; the grid and featured image will use `srcset`/`sizes` when the map is present.
+No changes to the HTML are required; the grid and featured image will use `srcset`/`sizes` when the map is present.
