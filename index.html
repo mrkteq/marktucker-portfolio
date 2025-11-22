@@ -19,18 +19,31 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+
+    <script src="./js/animated-logo.js"></script>
 </head>
 <body>
     <header class="site-header">
-        Frontend / UI Specialist
+        <div class="header-content">
+            <animated-logo 
+                width="80" 
+                height="80" 
+                class="header-logo"
+                letters-draw-duration="2.5s"
+                letters-fill-duration="0.8s"
+                globe-draw-delay="1.8s"
+                globe-fill-delay="2.4s"
+                globe-draw-duration="1s"
+                globe-fill-duration="0.6s"></animated-logo>
+            <span class="header-text">Frontend / UI Specialist</span>
+        </div>
     </header>
-
+    
     <section class="hero" aria-labelledby="about-heading">
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
             <section class="about" aria-labelledby="about-heading">
                 <h2 id="about-heading">About Me</h2>
-                <!-- <p>My name is Mark Tucker and I'm an experienced web developer with a background in building digital solutions for agencies, PLCs, and businesses across Europe. Skilled in developing and maintaining websites, problem-solving, and adapting to evolving technologies. Passionate about creating functional, user-friendly experiences and always looking to refine my skills. Seeking remote opportunities where I can contribute expertise, reliability, and a commitment to quality work.</p> -->
                 <p>I'm Mark, a web developer skilled in creating interactive digital experiences for various clients across Europe. I focus on building visually appealing and high-performing websites using the latest technologies. My passion lies in crafting user-centric experiences and continuously learning about new frameworks and design trends. Outside of coding, I love experimenting with new applications to boost creativity and productivity.</p>
                 <div class="button-group">
                     <a href="https://www.linkedin.com/in/mark-anthony-tucker" class="button blue" target="_blank" rel="noopener noreferrer" aria-label="View my LinkedIn profile">LinkedIn</a>
@@ -40,7 +53,7 @@
             </section>
         </div>
     </section>
-
+    
     <main id="main-content">
         <article id="projects" class="projects">
             <div class="container">
@@ -58,16 +71,16 @@
                         
                         <figure class="featured-image-container">
                             <img src="/img/project-pure-html-and-css.jpg" 
-                                 alt="Screenshot of Pure HTML & CSS project" 
-                                 class="project-image featured" 
-                                 id="featured-project"
-                                 width="1280" height="720"
-                                 loading="lazy" decoding="async">
+                            alt="Screenshot of Pure HTML & CSS project" 
+                            class="project-image featured" 
+                            id="featured-project"
+                            width="1280" height="720"
+                            loading="lazy" decoding="async">
                         </figure>
                     </div>    
-               </section>         
-               
-               <section class="project-showcase" aria-labelledby="more-projects-heading">
+                </section>         
+                
+                <section class="project-showcase" aria-labelledby="more-projects-heading">
                     <h2 id="more-projects-heading">More Projects</h2>
                     <div id="project-grid" class="project-grid-gallery" role="list" aria-live="polite"></div>
                     <div class="project-grid-actions">
@@ -77,17 +90,26 @@
             </div>
         </article>
     </main>
-
+    
     <footer class="site-footer">
-        Mark Tucker <span id="year"></span>
+        <animated-logo 
+            width="50" 
+            height="50" 
+            class="footer-logo"
+            letters-draw-duration="2.5s"
+            letters-fill-duration="0.8s"
+            globe-draw-delay="1.8s"
+            globe-fill-delay="2.4s"
+            globe-draw-duration="1s"
+            globe-fill-duration="0.6s"></animated-logo> Mark Tucker 
+        <span id="year"></span>
     </footer>
-
+    
     <script data-goatcounter="https://marktucker-portfolio.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    async src="//gc.zgo.at/count.js"></script>
     <script src="/js/script.js"></script>
     <script>
-        // Dynamically set the current year in the footer
         document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+        </script>
 </body>
 </html>
